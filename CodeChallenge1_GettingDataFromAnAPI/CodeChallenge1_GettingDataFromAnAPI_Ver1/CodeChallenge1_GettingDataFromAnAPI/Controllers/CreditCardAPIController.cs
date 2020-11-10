@@ -33,7 +33,7 @@ namespace CodeChallenge1_GettingDataFromAnAPI.Controllers
             return !string.IsNullOrEmpty(content) ?
                JsonConvert.DeserializeObject<List<String>>(content) :
                new List<string>();
-           // return JsonConvert.DeserializeObject<List<String>>(content); 
+           
             }
             catch (Exception e){
                 Console.WriteLine(e.ToString());
